@@ -6,8 +6,6 @@
 int main(void)
 {
 char c;
-char str[60] = "The alphabet letters in lowercase and uppercase are:\n";
-putchar(str[60]);
 for (c = 'a'; c <= 'z'; c++)
 {
 putchar(c);
