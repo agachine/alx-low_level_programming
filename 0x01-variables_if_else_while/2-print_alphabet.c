@@ -6,11 +6,10 @@
 int main(void)
 {
 char c;
-char str[40] = "The alphabet letters in lowercase are:\n";
-putchar(str[40]);
 for (c = 'a'; c <= 'z'; c++)
 {
 putchar(c);
 }
+putchar('\n')
 return (0);
 }
