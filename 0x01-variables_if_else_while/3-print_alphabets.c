@@ -5,13 +5,13 @@
 */
 int main(void)
 {
-char c;
+char c[60];
 char i[2] = "\n";
 char str[60] = "The alphabet letters in lowercase and uppercase are:\n";
-putchar(str[40]);
-for (c = 'a'; c <= 'Z'; c++)
+putchar(str[60]);
+for (c[60] = 'a'; c[60] <= 'Z'; c[60]++)
 {
-putchar(c);
+putchar(c[60]);
 }
 putchar(i[2]);
 return (0);
