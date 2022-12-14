@@ -17,9 +17,8 @@ if (m < 9)
 {
 if (g <= 9)
 {
-_putchar(g + '0');
+_putchar((g % 10) + '0');
 _putchar (',');
-_putchar (' ');
 _putchar (' ');
 }
 else
@@ -34,7 +33,7 @@ else
 {
 if (g <= 9)
 {
-_putchar(g + '0');
+_putchar((g % 10) + '0');
 }
 else
 {
