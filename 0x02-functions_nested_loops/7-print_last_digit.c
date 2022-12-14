@@ -13,6 +13,10 @@ if (n < 0)
 n = -n;
 }
 Last_digit = n % 10;
+if (Last_digit < 0)
+{
+Last_digit = -Last_digit;
+}
 _putchar(Last_digit + '0');
 return (Last_digit);
 }
