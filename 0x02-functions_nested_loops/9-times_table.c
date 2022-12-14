@@ -20,6 +20,7 @@ if (g <= 9)
 _putchar(g + '0');
 _putchar (',');
 _putchar (' ');
+_putchar (' ');
 }
 else
 {
