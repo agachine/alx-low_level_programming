@@ -7,10 +7,10 @@
 */
 void jack_bauer(void)
 {
-int h;
+int h = 0;
 while (h < 24)
 {
-int m;
+int m = 0;
 while (m < 60)
 {
 _putchar((h / 10) + '0');
