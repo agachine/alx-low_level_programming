@@ -20,7 +20,7 @@ printf(" Fizz");
 else if (n == 1)
 printf ("%d ", n);
 else
-printf(" %d", n);
+printf("%d", n);
 }
 putchar('\n');
 return (0);
