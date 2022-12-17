@@ -6,7 +6,7 @@
 * multiples if five print Buzz
 * Return: nothing
 */
-void main(void)
+int main(void)
 {
 int n;
 for (n = 1; n <= 100; n++)
@@ -21,4 +21,5 @@ else
 printf(" %d", n);
 }
 putchar('\n');
+return (0);
 }
