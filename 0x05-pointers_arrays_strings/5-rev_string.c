@@ -14,8 +14,7 @@ c++;
 }
 while (c > 0)
 {
-c--;
 _putchar(s[c]);
+c--;
 }
-_putchar('\n');
 }
