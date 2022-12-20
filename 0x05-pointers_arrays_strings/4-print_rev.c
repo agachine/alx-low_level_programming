@@ -7,14 +7,14 @@
 */
 void print_rev(char *s)
 {
-int c = 0;; 
+int c = 0;
 while (s[c] != '\0')
 {
 c++;
 }
 while (c > 0)
 {
-_putchar(s[c];
+_putchar(s[c]);
 c--;
 }
 _putchar('\n');
