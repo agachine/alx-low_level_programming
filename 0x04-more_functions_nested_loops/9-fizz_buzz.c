@@ -6,10 +6,10 @@
 * multiples if five print Buzz
 * Return: nothing
 */
-void main(void)
+int main(void)
 {
 int n;
-for (n = 1; m <= 100; m++)
+for (n = 1; n <= 100; n++)
 {
 if (((n % 3) == 0) && ((n % 5) == 0))
 printf(" FizzBuzz");
@@ -18,9 +18,9 @@ printf(" Buzz");
 else if (n % 3 == 0)
 printf(" Fizz");
 else if (n == 1)
-printf("%d", n);
+printf ("%d ", n);
 else
-printf(" %d", n);
+printf("%d", n);
 }
 putchar('\n');
 return (0);
