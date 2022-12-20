@@ -18,7 +18,7 @@ n = i / 2;
 else 
 n = ((i - 1) /2);
   
-while ( n < i)
+while ( n <= i)
 {
 _putchar(str[n]);
 n++;
