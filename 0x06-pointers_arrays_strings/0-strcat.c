@@ -2,27 +2,24 @@
 #include <stdio.h>
 /**
 * _strcat - concatenates two strings
-*@n: Pointer to be updated
+* @dest: input parameter string
+* @src: input parameter string
 * Return: Always 0.
 */
 char *_strcat(char *dest, char *src)
 {
-int i, j = 0;
-char *temp;
+int i = 0;
 while (dest[i] != '\0')
 {
-temp[j] = dest[i];
 i++;
-j++;
 }
-i = 0;
-while (src[i] != '\0')
+int j = 0;
+while (src[j] != '\0')
 {
-temp[j] = src[i];
+dest[i] = src[j];
 i++;
 j++;
 }
-dest[] = temp[j];
-dest[] = '\0'
-returns *dest;
+dest[i] = '\0'
+returns (dest);
 }
