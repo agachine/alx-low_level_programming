@@ -8,15 +8,15 @@
 char *leet(char *s)
 {
 int i, j;
-char leet[] = "aAeEoOtTlL";
+char leetorg[] = "aAeEoOtTlL";
 char leet_rep[] = "4433007711";
 i = 0;
 while (s[i] != '\0')
 {
 j = 0;
-while (leet[j] != '\0')
+while (leetorg[j] != '\0')
 {
-if (s[i] == leet[j])
+if (s[i] == leetorg[j])
 {
 s[i] = leet_rep[j];
 }
