@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* _strcat - concatenates two strings
+* _strncpy -  copies a string
 * @dest: input parameter string
 * @src: input parameter string
 * @n: 
-* Return: Always 0.
+* Return: string.
 */
 char *_strncpy(char *dest, char *src, int n)
 {
