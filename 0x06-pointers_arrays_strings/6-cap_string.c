@@ -7,15 +7,15 @@
 */
 char *cap_string(char *str)
 {
+int a[13] = {9, 10, 32, 44, 59, 46, 33, 69, 34, 40, 41, 125, 123};
 int i;
 for (i = 0; str[i] != '\0'; i++)
 {
-if (str[i] >= 32 && str[i] <= 47)
+if (i == 0 && a[i] == str[i])
 {
-if (str[i + 1] >= 97 && str[i + 1] <= 122)
+if (str[i + 1] >= 97 && str[i + 1] <= 122) 
 {
 str[i + 1] = str[i + 1] - 32;
-}
 }
 }
 return (str);
