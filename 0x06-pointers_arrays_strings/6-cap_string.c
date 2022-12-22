@@ -14,7 +14,7 @@ for (i = 0; str[i] != '\0'; i++)
 {
 for (j = 0;  a[j] != '\0'; j++)  
 {
-if (a[i] == str[j] && str[i + 1] >= 97 && str[i + 1] <= 122) 
+if (a[j] == str[i] && str[i + 1] >= 97 && str[i + 1] <= 122) 
 {
 str[i + 1] = str[i + 1] - 32;
 }
