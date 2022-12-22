@@ -18,7 +18,7 @@ str[i] = str[i] - 32;
 }
 for (j = 0; a[j] != '\0'; j++)  
 {
-if (j !=o && a[j] == str[i] && str[i + 1] >= 97 && str[i + 1] <= 122) 
+if (j != 0 && a[j] == str[i] && str[i + 1] >= 97 && str[i + 1] <= 122) 
 {
 str[i + 1] = str[i + 1] - 32;
 }
