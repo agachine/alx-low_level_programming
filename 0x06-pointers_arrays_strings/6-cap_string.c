@@ -12,7 +12,7 @@ int j;
 int i;
 for (i = 0; str[i] != '\0'; i++)
 {
-for (j = 0; str[i] != '\0' && a[j] != '\0'; j++)  
+for (j = 0;  a[j] != '\0'; j++)  
 {
 if (a[i] == str[j] && str[i + 1] >= 97 && str[i + 1] <= 122) 
 {
