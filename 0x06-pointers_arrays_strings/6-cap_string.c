@@ -12,9 +12,9 @@ int i;
 int j; 
 for (j = 0; str[j] != '\0' && a[j] != '\0'; j++)  
 {
-if (a[j] == str[i] && str[i + 1] >= 97 && str[i + 1] <= 122) 
+if (a[j] == str[j] && str[j + 1] >= 97 && str[j + 1] <= 122) 
 {
-str[i + 1] = str[i + 1] - 32;
+str[j + 1] = str[j + 1] - 32;
 }
 }
 return (str);
