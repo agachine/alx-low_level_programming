@@ -11,7 +11,7 @@ unsigned int length, i;
 
 for (length = 0; *(s + length); length++)
 {
-for ( i = 0; *(accept + i) ; i++)
+for (i = 0; *(accept + i) ; i++)
 {
 if (*(s + length) == *(accept + i))
 break;
