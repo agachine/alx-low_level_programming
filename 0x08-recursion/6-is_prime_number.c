@@ -9,7 +9,7 @@ int checkprime (int n , int i);
  */ 
 int checkprime (int n , int i)
 {
-if ( n < 2)
+if (n < 2)
 {
 return 0;
 }
