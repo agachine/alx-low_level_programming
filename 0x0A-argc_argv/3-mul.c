@@ -12,7 +12,7 @@ int mul;
 if (argc > 2)
 {
 mul = atoi(argv[1]) * atoi(argv[2]);
-printf("%d\n", mul);
+printf("%i\n", mul);
 }
 else
 printf("Error\n");
