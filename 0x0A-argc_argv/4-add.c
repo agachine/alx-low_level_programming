@@ -4,7 +4,8 @@
 #include <stdio.h>
 /**
 * StringCheck - check whether argument is a digit
-* @s: parameter to be checked 
+* @s: parameter to be checked
+* Return: success or error
 */
 int StringCheck(char *s)
 {
