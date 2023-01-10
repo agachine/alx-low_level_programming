@@ -4,13 +4,27 @@
 #include <stdio.h>
 /**
 * main - print program arguments
+* StringCheck - check whether argument is a digit
+* @s: parameter to be checked 
 * @argc: argument count
 * @argv: string
 * Return: nothing
 */
+int StringCheck(char *s)
+{
+int i = 0;
+for (; s[i] != '\0'; i++)
+{
+if (!isdigit(s[i]))
+{
+return (0);
+}
+}
+return (1);
+}
 int main(int  argc, char  *argv[])
 {
-int i;
+int j;
 int sum = 0;
 if (argc <= 1)
 {
@@ -19,11 +33,11 @@ return (1);
 }
 else
 {
-for (i = 1; i < argc; i++)
+for (j = 1; j < argc; j++)
 {
-if (isdigit(*argv[i]))
+if (StringCheck(*argv[j]))
 {
-sum += atoi(argv[i]);
+sum += atoi(argv[j]);
 }
 else
 {
