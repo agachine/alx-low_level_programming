@@ -29,13 +29,12 @@ int sum = 0;
 if (argc <= 1)
 {
 printf("0\n");
-return (1);
 }
 else
 {
 for (j = 1; j < argc; j++)
 {
-if (StringCheck(*argv[j]))
+if (StringCheck(argv[j]))
 {
 sum += atoi(argv[j]);
 }
