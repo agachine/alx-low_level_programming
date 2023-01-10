@@ -8,18 +8,6 @@
 * @argv: string
 * Return: nothing
 */
-int StringCheck(char *s)
-{
-int i = 0;
-for (; s[i] != '\0'; i++)
-{
-if (!isdigit(s[i]))
-{
-return (0);
-}
-}
-return (1);
-}
 int main(int  argc, char  *argv[])
 {
 int i;
@@ -33,7 +21,7 @@ else
 {
 for (i = 1; i < argc; i++)
 {
-if (StringCheck(argv[i]))
+if (isdigit(*argv[i]))
 {
 sum += atoi(argv[i]);
 }
@@ -44,6 +32,6 @@ return (1);
 }
 }
 printf("%i\n", sum);
-return (0);
 }
+return (0);
 }
