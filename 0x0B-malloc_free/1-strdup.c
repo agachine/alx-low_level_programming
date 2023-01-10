@@ -13,17 +13,18 @@ char *_strdup(char *str)
 unsigned int i, j;
 char *p;
 int n;
+if (str == NULL)
+{
+return (NULL);
+}
 i = 0;
 while (str[i] != '\0')
 {
 n++;
 i++;
 }
+n = n + 1;
 p = (char *)malloc(sizeof(char) * n);
-if (str == NULL)
-{
-return (NULL);
-}
 if (p == NULL)
 {
 return (NULL);
@@ -36,6 +37,7 @@ while (str[j] != '\0')
 p[j] = str[j];
 j++;
 }
+p[j] = '\0';
 }
 return (p);
 }
