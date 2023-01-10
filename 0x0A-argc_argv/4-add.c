@@ -3,12 +3,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-* main - print program arguments
 * StringCheck - check whether argument is a digit
 * @s: parameter to be checked 
-* @argc: argument count
-* @argv: string
-* Return: nothing
 */
 int StringCheck(char *s)
 {
@@ -22,6 +18,12 @@ return (0);
 }
 return (1);
 }
+/**
+* main - print program arguments
+* @argc: argument count
+* @argv: string
+* Return: nothing
+*/
 int main(int  argc, char  *argv[])
 {
 int j;
