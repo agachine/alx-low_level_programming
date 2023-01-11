@@ -15,7 +15,7 @@ while (i < height)
 {
 p = grid[i];
 free(p);
-i++
+i++;
 }
 free(grid);
 }
