@@ -22,11 +22,11 @@ while (s1[i] != '\0')
 i++;
 }
 j = 0;
-while (s2[i] != '\0')
+while (s2[j] != '\0')
 {
-i++;
+j++;
 }
-i = i  + 1;
+i = i + j  + 1;
 p = (char *)malloc(sizeof(char) * i);
 if (p == NULL)
 {
