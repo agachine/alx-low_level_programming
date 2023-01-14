@@ -64,4 +64,5 @@ k++;
 ptr[i] = '\0';
 }
 return (ptr);
+return (0);
 }
