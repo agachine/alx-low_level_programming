@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 /**
 * _calloc - allocates memory for an array, using malloc
 *@size: size in bytes of each element
@@ -24,11 +23,10 @@ return (NULL);
 else
 {
 i = 0;
-while (i < nmemb)
+while (i < (nmemb *size))
 {
 ptr[i] = 0;
 }
-}
 return (ptr);
-return (0);
+}
 }
