@@ -10,29 +10,29 @@
 int *array_range(int min, int max)
 {
 int *ptr;
-int a;
+int len;
 int i;
 if (min > max)
 {
 return (NULL);
 }
-a = 0;
-while (a < max - min)
+len = min;
+while (len < = max )
 {
-a++;
+len++;
 }
-a = a + 1;
-ptr = malloc(sizeof(int) * a);
+ptr = malloc(sizeof(int) * len);
 if (ptr == NULL)
 {
 return (NULL);
 }
 else
 {
-i = min;
-while (i < a)
+i = 0;
+while (min <= max)
 {
-ptr[i] = min++;
+ptr[i] = min;
+min++; 
 i++;
 }
 return (ptr);
