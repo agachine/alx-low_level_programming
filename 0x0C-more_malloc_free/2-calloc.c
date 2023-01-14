@@ -15,7 +15,7 @@ if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-ptr = malloc (nmemb * size);
+ptr = malloc(nmemb * size);
 if (ptr == NULL)
 {
 return (NULL);
@@ -23,7 +23,7 @@ return (NULL);
 else
 {
 i = 0;
-while (i < (nmemb *size))
+while (i < (nmemb  * size))
 {
 ptr[i] = 0;
 i++;
