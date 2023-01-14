@@ -15,11 +15,15 @@ if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
+else
+{
 ptr = malloc (nmemb * size);
 if (ptr == NULL)
 {
 return (NULL);
 }
+else
 return (ptr);
+}
 return (0);
 }
