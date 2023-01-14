@@ -43,7 +43,7 @@ if (n >= j)
 {
 n = j;
 }
-j = o;
+j = 0;
 while (j <= n)
 {
 ptr[i] = s2[j];
