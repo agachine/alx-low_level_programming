@@ -18,19 +18,13 @@ if (s2 == NULL)
 s2 = "";
 i = 0;
 while (s1[i] != '\0')
-{
 i++;
-}
 j = 0;
 while (s2[j] != '\0')
-{
 j++;
-}
 ptr = malloc(sizeof(char) * (i + n + 1));
 if (ptr == NULL)
-{
 return (NULL);
-}
 i = 0;
 while (s1[i] != '\0')
 {
@@ -38,9 +32,7 @@ ptr[i] = s1[i];
 i++;
 }
 if (n >= j)
-{
 n = j;
-}
 j = 0;
 while (j < n)
 {
