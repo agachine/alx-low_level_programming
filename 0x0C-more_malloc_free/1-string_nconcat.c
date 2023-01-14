@@ -44,7 +44,7 @@ if (n >= j)
 n = j;
 }
 j = 0;
-while (j <= n)
+while (j < n)
 {
 ptr[i] = s2[j];
 j++;
