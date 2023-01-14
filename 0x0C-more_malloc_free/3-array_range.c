@@ -17,7 +17,7 @@ if (min > max)
 return (NULL);
 }
 a = 0;
-while (a < max-min)
+while (a < max - min)
 {
 a++;
 }
@@ -30,7 +30,7 @@ return (NULL);
 else
 {
 i = min;
- while (i < a)
+while (i < a)
 {
 ptr[i] = min++;
 i++;
