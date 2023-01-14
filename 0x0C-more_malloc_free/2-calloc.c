@@ -23,11 +23,11 @@ return (NULL);
 else
 {
 i = 0;
-while (i < nmemb *size)
+while (i < (nmemb *size))
 {
 ptr[i] = 0;
 }
-}
 return (ptr);
+}
 return (0);
 }
