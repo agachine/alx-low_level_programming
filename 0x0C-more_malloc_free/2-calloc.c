@@ -10,20 +10,25 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-void *ptr;
+char *ptr;
+unsigned int i;
 if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-else
-{
 ptr = malloc (nmemb * size);
 if (ptr == NULL)
 {
 return (NULL);
 }
 else
-return (ptr);
+{
+i = 0;
+while (i < nmemb)
+{
+ptr[i] = 0;
 }
+}
+return (ptr);
 return (0);
 }
