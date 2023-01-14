@@ -31,8 +31,6 @@ if (ptr == NULL)
 {
 return (NULL);
 }
-else
-{
 i = 0;
 while (s1[i] != '\0')
 {
@@ -52,6 +50,5 @@ i++;
 }
 ptr[i] = '\0';
 return (ptr);
-}
 return (0);
 }
