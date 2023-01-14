@@ -17,7 +17,7 @@ if (min > max)
 return (NULL);
 }
 len = min;
-while (len < = max )
+while (len <= max )
 {
 len++;
 }
