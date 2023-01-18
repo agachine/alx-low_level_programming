@@ -23,7 +23,7 @@ free(mydog);
 return (NULL);
 }
 mydog->age = age;
-mydog->owner = strdup(owner);  
+mydog->owner = strdup(owner);
 if (!mydog->owner)
 {
 free(mydog->name);
