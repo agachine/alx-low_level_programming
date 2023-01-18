@@ -1,6 +1,7 @@
 #include <stddef.h>
 #include "dog.h"
 #include<string.h>
+#include <stdlib.h>
 char *_strdup(char *str);
 /**
 *new_dog - creates new dog details
@@ -21,8 +22,8 @@ if (!mydog->name)
 free(mydog);
 return (NULL);
 }
-mydog->age= strdup(age);
-mydog->owner= strdup(owner);  
+mydog->age = age;
+mydog->owner = strdup(owner);  
 if (!mydog->owner)
 {
 free(mydog->name);
