@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 /**
  * int_index - searches for an integer
- * on each element of an array
+ *
  * @array: array to iterate over
  * @size: size of the array
  * @cmp: pointer to function used
@@ -14,7 +14,7 @@ if (array && cmp)
 {
 for (elem = 0; elem < size; elem++)
 {
-if cmp(array[elem]) != 0;
+if (cmp(array[elem]) != 0)
 return elem;
 }
 }
