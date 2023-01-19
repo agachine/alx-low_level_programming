@@ -16,6 +16,8 @@ for (elem = 0; elem < size; elem++)
 {
 if (cmp(array[elem]) != 0)
 return elem;
+else 
+return (-1); 
 }
 }
 return (-1);
