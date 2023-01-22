@@ -14,8 +14,8 @@ if (n == 0)
 return (0);
 for (i = 0; i < n; i++)
 {
-sum += va_arg(arglist, int); 
+sum += va_arg(arglist, int);
 }
 va_end(arglist);
-return sum;
+return (sum);
 }
