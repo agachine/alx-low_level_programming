@@ -14,7 +14,7 @@ unsigned int i;
 va_list strings;
 va_start(strings, n);
 if (separator == NULL)
- separator = "";
+separator = "";
 for (i = 0; i < n; i++)
 {
 s = va_arg(strings, char*);
