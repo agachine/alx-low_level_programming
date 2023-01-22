@@ -22,7 +22,7 @@ if (s == NULL)
 {
 s = "nil";
 }
-printf("%s", va_arg(strings, char*));
+printf("%s", s);
 if (i < n - 1)
 {
 printf("%s", separator);
