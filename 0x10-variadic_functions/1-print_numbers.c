@@ -18,5 +18,5 @@ for (i = 0; i < n; i++)
     printf("%s", separator);
 } 
 printf("\n");
-va_end(arglist);
+va_end(numbers);
 }
