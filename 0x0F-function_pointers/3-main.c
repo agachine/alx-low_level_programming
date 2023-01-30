@@ -1,12 +1,11 @@
 #include "3-calc.h"
-
 /**
- * main - program that performs simple operations
- * @argc: number of arguments
- * @argv: array of arguments
- *
- * Return: Always 0
- */
+* main - program that performs simple operations
+* @argc: number of arguments
+* @argv: array of arguments
+*
+* Return: Always 0
+*/
 int main(int argc, char *argv[])
 {
 int arg1, arg2, result;
@@ -25,7 +24,7 @@ if (!func)
 printf("Error\n");
 exit(99);
 }
-o = *argv[2];
+ o = *argv[2];
 if ((o == '/' || o == '%') && arg2 == 0)
 {
 printf("Error\n");
