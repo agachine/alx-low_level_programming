@@ -12,9 +12,9 @@ if (*head)
 {
 ptr = (*head)->next;
 hold = (*head)->n;
-free (*head);
+free(*head);
 *head = ptr;
-} 
+}
 else
 return (0);
 return (hold);
