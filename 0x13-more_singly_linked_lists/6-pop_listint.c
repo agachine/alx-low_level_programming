@@ -12,8 +12,8 @@ if (*head)
 {
 ptr = (*head)->next;
 hold = (*head)->n;
-free (head);
-head = ptr;
+free (*head);
+*head = ptr;
 } 
 else
 return (0);
