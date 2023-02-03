@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - returns the sum of all the data (n) of a linked list
+ * sum_listint - returns the sum of all the data (n) of a linked list
  * @head: linked list
  * Return: sum
  */
