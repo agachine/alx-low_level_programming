@@ -11,16 +11,12 @@ listint_t *temp;
 temp = head;
 while (temp != NULL)
 {
-while (count != (index - 1))
-{  
-count++;
-}
-temp = temp->next;
-}
 if (count == index)
 {
 return (temp);
 }
-else 
+count++;
+temp = temp->next;
+}
 return (NULL);
 }
