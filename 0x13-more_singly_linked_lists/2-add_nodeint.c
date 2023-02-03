@@ -13,6 +13,6 @@ if (new == NULL)
 return (NULL);
 new->n = n;
 new->next = head;
-head = new;
+*head = new;
 return (new);
 }
