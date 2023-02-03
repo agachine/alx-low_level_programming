@@ -15,7 +15,7 @@ temp->n = n;
 temp->next = NULL;
 if (*head)
 {
-ptr = *head; 
+ptr = *head;
 while (ptr->next != NULL)
 {
 ptr = ptr->next;
@@ -24,7 +24,7 @@ ptr->next = temp;
 }
 else
 {
-*head = temp; 
+*head = temp;
 }
 return (temp);
 }
