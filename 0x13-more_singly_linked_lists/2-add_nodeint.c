@@ -12,7 +12,7 @@ new = malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
 new->n = n;
-new->next = head;
+new->next = *head;
 *head = new;
 return (new);
 }
