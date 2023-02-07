@@ -1,12 +1,12 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - returns the sum of all the data (n) of a linked list
+ * sum_listint - returns the sum of all the data (n) of a linked list
  * @head: linked list
  * Return: sum
  */
 int sum_listint(listint_t *head)
 {
-unsigned int sum;
+unsigned int sum = 0;
 if (head == NULL)
 return (0);
 while (head != NULL)
