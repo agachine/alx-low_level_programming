@@ -1,44 +1,36 @@
 include "main.h"
 /**
- * print_binary - prints binary representation of a number
- * @n: number to be printed
- * Return: nothing
+ * print_binary - print binary
+ * @n: integer to mess with
  */
 void print_binary(unsigned long int n)
 {
-unsigned long int divisor, check;
-char flag;
-flag = 0;
-divisor = _pow(2, sizeof(unsigned long int) * 8 - 1);
-while (divisor != 0)
+unsigned long int i = 1;
+i <<= ((sizeof(i) * 8) - 1);
+if (n == 1)
 {
-check = n & divisor;
-if (check == divisor)
-{
-flag = 1;
 _putchar('1');
+return;
 }
-else if (flag == 1 || divisor == 1)
+if (n == 0)
 {
 _putchar('0');
+return;
 }
-divisor >>= 1;
-}
-}
-/**
- * _pow - get power of a number
- * @base: base number
- * @power: power
- * Return: power
- */
-unsigned int _pow(unsigned int base, unsigned int power)
+while (i > 0)
 {
-unsigned int i;
-unsigned long int num;
-num = 1;
-for (i = 0; i < power; i++)
-{
-num *= base;
+if ((i & n) == 0)
+i = i >> 1;
+else
+break;
 }
-return (num);
+while (i > 0)
+	{
+		if ((i & n) == 0)
+			_putchar('0');
+		else
+			_putchar('1');
+		i = i >> 1;
+	}
+
 }
